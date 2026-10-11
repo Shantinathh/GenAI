@@ -1,0 +1,66 @@
+Generative AI (GenAI) Notes
+=============================
+
+1. What is Generative AI?
+Generative Artificial Intelligence (GenAI) is a type of artificial intelligence that can create new content based on patterns learned from data. It can generate text, images, audio, video, and computer code.
+
+2. How Does Generative AI Work?
+Generative AI models are trained on large datasets. During training, they learn patterns, relationships, and structures in the data. When a user provides a prompt, the model uses those learned patterns to generate a response or new content. The output is influenced by the prompt, the model, and its training.
+
+3. What Are Large Language Models (LLMs)?
+Large Language Models are AI models trained on large amounts of text. They can perform tasks such as answering questions, summarizing documents, translating languages, writing code, and holding conversations. Examples include the Gemini and GPT model families.
+
+4. What Is a Prompt?
+A prompt is the instruction, question, or context given to an AI model. Clear prompts usually produce more useful results. A good prompt states the task, provides relevant context, and describes the desired format.
+
+5. What Is Prompt Engineering?
+Prompt engineering is the practice of designing and improving prompts to guide a model toward a useful output. Common techniques include giving clear instructions, adding examples, defining the model's role, specifying constraints, and asking for a structured response.
+
+6. Common Applications of GenAI
+- Chatbots and virtual assistants
+- Summarizing notes, reports, and documents
+- Generating and explaining computer code
+- Creating images and other media
+- Translation and writing assistance
+- Searching and answering questions about documents
+- Supporting education and personalized learning
+
+7. What Is Retrieval-Augmented Generation (RAG)?
+RAG is a technique that combines information retrieval with text generation. First, a system searches a collection of documents for relevant information. It then supplies that information to a language model, which uses it to generate an answer. RAG can help answers stay grounded in provided sources, although it does not eliminate every error.
+
+8. What Is a Text Loader?
+A text loader is a software component that reads text from a file and converts it into a format that an application can process. In LangChain, TextLoader can load a plain-text file such as notes.txt into a Document object.
+
+9. What Is a Document in LangChain?
+A LangChain Document generally contains two main fields:
+- page_content: the text extracted from the source.
+- metadata: information about the source, such as the file path.
+
+10. Example: Loading This File with LangChain
+The following Python example loads notes.txt and prints the document content.
+
+    from langchain_community.document_loaders import TextLoader
+
+    loader = TextLoader("notes.txt", encoding="utf-8")
+    documents = loader.load()
+
+    for document in documents:
+        print(document.page_content)
+
+Install the loader package if needed:
+
+    pip install -U langchain-community
+
+11. Limitations and Responsible Use
+GenAI can produce incorrect information, sometimes called hallucinations. Always verify important claims, especially in academic, legal, financial, or medical contexts. Avoid sharing passwords, API keys, confidential documents, or unnecessary personal information with AI services. Respect copyright, privacy, and applicable usage policies.
+
+12. Key Terms
+- Artificial Intelligence (AI): Computer systems designed to perform tasks that normally require human intelligence.
+- Machine Learning (ML): Methods that enable systems to learn patterns from data.
+- Deep Learning: Machine learning based on multi-layer neural networks.
+- Token: A unit of text processed by a language model; it may be a word, part of a word, or punctuation.
+- Embedding: A numerical representation of text or other data that can help systems compare semantic similarity.
+- Vector Database: A system designed to store and search vector representations efficiently.
+- Hallucination: AI-generated content that is incorrect or unsupported but may sound convincing.
+
+End of Notes

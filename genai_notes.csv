@@ -1,0 +1,15 @@
+topic,category,content
+Generative AI,Definition,"AI that generates new content such as text, images, audio, video, or code by learning patterns from data."
+Generative AI,How it works,Models learn patterns from large datasets and use a prompt to generate new content.
+Large Language Models,Definition,"Models trained on large amounts of text that can answer questions, summarize, translate, write code, and converse."
+Prompt Engineering,Definition,The practice of designing clear instructions and context to guide an AI model toward a useful output.
+Prompt Engineering,Techniques,"Specify the task, provide context, define the desired format, add examples, and state constraints."
+Applications,Examples,"Chatbots, document summarization, code assistance, translation, writing support, image generation, and personalized learning."
+Retrieval-Augmented Generation (RAG),Definition,A method that retrieves relevant information from documents and supplies it to a language model to help ground its answer.
+Text Loader,Definition,A component that reads text from a file and converts it into a format an application can process.
+LangChain Document,Fields,page_content contains extracted text; metadata stores source information such as a file path.
+GenAI Limitations,Hallucinations,A model may generate incorrect or unsupported information that sounds convincing; verify important claims.
+Token,Definition,"A unit of text processed by a language model; it can be a word, part of a word, or punctuation."
+Embedding,Definition,A numerical representation of data used to compare semantic similarity.
+Vector Database,Definition,A system designed to store and search vector representations efficiently.
+Responsible Use,Guidance,"Protect API keys and confidential information, verify important outputs, and respect privacy and copyright."
