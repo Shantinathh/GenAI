@@ -67,3 +67,5 @@ langchain_huggingface
 
 # db
 chromadb
+
+arxiv
